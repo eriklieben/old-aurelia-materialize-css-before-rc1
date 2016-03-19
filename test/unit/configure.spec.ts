@@ -1,16 +1,16 @@
-import {configure} from '../../src/index';
+import {configure} from "../../src/index";
 import MaterializeCssOptions from "../../src/index";
 
 class ConfigStub {
 
     private resources: Array<string> = [];
 
-    globalResources(resources) {
+    public globalResources(resources) {
         this.resources = resources;
     }
 }
 
-describe('the Aurelia Materialize CSS configuration with the option enableAttributes true', () => {
+describe("the Aurelia Materialize CSS configuration with the option enableAttributes true", () => {
     let sut;
 
     beforeEach(() => {
@@ -21,23 +21,23 @@ describe('the Aurelia Materialize CSS configuration with the option enableAttrib
         configure(sut, options);
     });
 
-    it('must register the collapsible attribute', () => {
+    it("must register the collapsible attribute", () => {
         expect(sut.resources)
             .toContain("./javascript/collapsible/collapsibleAttribute");
     });
 
-    it('must register the collapsible body attribute', () => {
+    it("must register the collapsible body attribute", () => {
         expect(sut.resources)
             .toContain("./javascript/collapsible/collapsibleBodyAttribute");
     });
 
     it("must register the collapsible header attribute", () => {
         expect(sut.resources)
-            .toContain('./javascript/collapsible/collapsibleHeaderAttribute');
+            .toContain("./javascript/collapsible/collapsibleHeaderAttribute");
     });
 });
 
-describe('the Aurelia Materialize CSS configuration with the option enableAttributes false', () => {
+describe("the Aurelia Materialize CSS configuration with the option enableAttributes false", () => {
     let sut;
 
     beforeEach(() => {
@@ -47,23 +47,23 @@ describe('the Aurelia Materialize CSS configuration with the option enableAttrib
         configure(sut, options);
     });
 
-    it('must no register the collapsible attribute', () => {
+    it("must no register the collapsible attribute", () => {
         expect(sut.resources)
-            .not.toContain('./javascript/collapsible/collapsibleAttribute');
+            .not.toContain("./javascript/collapsible/collapsibleAttribute");
     });
 
-    it('must not register the collapsible body attribute', () => {
+    it("must not register the collapsible body attribute", () => {
         expect(sut.resources)
-            .not.toContain('./javascript/collapsible/collapsibleBodyAttribute');
+            .not.toContain("./javascript/collapsible/collapsibleBodyAttribute");
     });
 
-    it('must not register the collapsible header attribute', () => {
+    it("must not register the collapsible header attribute", () => {
         expect(sut.resources)
-            .not.toContain('./javascript/collapsible/collapsibleHeaderAttribute');
+            .not.toContain("./javascript/collapsible/collapsibleHeaderAttribute");
     });
 });
 
-describe('the Aurelia Materialize CSS configuration with the option enableElements true', () => {
+describe("the Aurelia Materialize CSS configuration with the option enableElements true", () => {
     let sut;
 
     beforeEach(() => {
@@ -73,28 +73,28 @@ describe('the Aurelia Materialize CSS configuration with the option enableElemen
         configure(sut, options);
     });
 
-    it('must register the collapsible element', () => {
+    it("must register the collapsible element", () => {
         expect(sut.resources)
-            .toContain('./javascript/collapsible/collapsibleElement');
+            .toContain("./javascript/collapsible/collapsibleElement");
     });
 
-    it('must register the collapsible body element', () => {
+    it("must register the collapsible body element", () => {
         expect(sut.resources)
-            .toContain('./javascript/collapsible/collapsibleBodyElement');
+            .toContain("./javascript/collapsible/collapsibleBodyElement");
     });
 
-    it('must register the collapsible header element', () => {
+    it("must register the collapsible header element", () => {
         expect(sut.resources)
-            .toContain('./javascript/collapsible/collapsibleHeaderElement');
+            .toContain("./javascript/collapsible/collapsibleHeaderElement");
     });
 
-    it('must register the collapsible item element', () => {
+    it("must register the collapsible item element", () => {
         expect(sut.resources)
-            .toContain('./javascript/collapsible/collapsibleItemElement');
+            .toContain("./javascript/collapsible/collapsibleItemElement");
     });
 });
 
-describe('the Aurelia Materialize CSS configuration with the option enableElements false', () => {
+describe("the Aurelia Materialize CSS configuration with the option enableElements false", () => {
     let sut;
 
     beforeEach(() => {
@@ -104,23 +104,23 @@ describe('the Aurelia Materialize CSS configuration with the option enableElemen
         configure(sut, options);
     });
 
-    it('must not register the collapsible element', () => {
+    it("must not register the collapsible element", () => {
         expect(sut.resources)
-            .not.toContain('./javascript/collapsible/collapsibleElement');
+            .not.toContain("./javascript/collapsible/collapsibleElement");
     });
 
-    it('must not register the collapsible body element', () => {
+    it("must not register the collapsible body element", () => {
         expect(sut.resources)
-            .not.toContain('./javascript/collapsible/collapsibleBodyElement');
+            .not.toContain("./javascript/collapsible/collapsibleBodyElement");
     });
 
-    it('must not register the collapsible header element', () => {
+    it("must not register the collapsible header element", () => {
         expect(sut.resources)
-            .not.toContain('./javascript/collapsible/collapsibleHeaderElement');
+            .not.toContain("./javascript/collapsible/collapsibleHeaderElement");
     });
 
-    it('must not register the collapsible item element', () => {
+    it("must not register the collapsible item element", () => {
         expect(sut.resources)
-            .not.toContain('./javascript/collapsible/collapsibleItemElement');
+            .not.toContain("./javascript/collapsible/collapsibleItemElement");
     });
 });

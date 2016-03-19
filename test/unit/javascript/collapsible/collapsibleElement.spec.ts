@@ -1,6 +1,6 @@
-import { CollapsibleElement } from '../../../../src/javascript/collapsible/collapsibleElement';
-import { Container } from 'aurelia-dependency-injection';
-import { TemplatingEngine } from 'aurelia-templating';
+import { CollapsibleElement } from "../../../../src/javascript/collapsible/collapsibleElement";
+import { Container } from "aurelia-dependency-injection";
+import { TemplatingEngine } from "aurelia-templating";
 import { DOM } from "aurelia-pal";
 
 import "eriklieben/materialize";
