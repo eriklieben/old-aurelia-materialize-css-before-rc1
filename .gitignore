@@ -1,0 +1,7 @@
+node_modules
+jspm_packages
+bower_components
+build/reports
+typings
+.idea
+.DS_STORE

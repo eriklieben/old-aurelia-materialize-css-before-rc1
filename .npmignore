@@ -1,0 +1,7 @@
+build
+es6-typings
+jspm_packages
+bower_components
+src
+typings
+.idea
