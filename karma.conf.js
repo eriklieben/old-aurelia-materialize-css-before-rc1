@@ -3,7 +3,7 @@ module.exports = function(config) {
     basePath: './',
     frameworks: ['systemjs', 'jasmine'],
     systemjs: {
-      configFile: 'config.js',
+      configFile: './config.js',
       config: {
         paths: {
           "typescript": "node_modules/typescript/lib/typescript.js",
@@ -29,7 +29,8 @@ module.exports = function(config) {
     },
     files: [
       'test/unit/setup.ts',
-      'test/unit/*.ts'
+      'test/unit/*.ts',
+      'test/unit/**/*.ts'
     ],
     exclude: [],
     preprocessors: { },
