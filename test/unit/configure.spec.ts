@@ -3,54 +3,124 @@ import MaterializeCssOptions from "../../src/index";
 
 class ConfigStub {
 
-  private resources: Array<string> = [];
+    private resources: Array<string> = [];
 
-  globalResources(resources) {
-    this.resources = resources;
-  }
+    globalResources(resources) {
+        this.resources = resources;
+    }
 }
 
 describe('the Aurelia Materialize CSS configuration with the option enableAttributes true', () => {
-  let mockedConfiguration;
+    let sut;
 
-  beforeEach(() => {
-    mockedConfiguration = new ConfigStub();
-    let options = new MaterializeCssOptions();
-    options.enableAttributes = true;
-    options.enableElements = false;
-    configure(mockedConfiguration, options);
-  });
+    beforeEach(() => {
+        sut = new ConfigStub();
+        let options = new MaterializeCssOptions();
+        options.enableAttributes = true;
+        options.enableElements = false;
+        configure(sut, options);
+    });
+
+    it('must register the collapsible attribute', () => {
+        expect(sut.resources)
+            .toContain("./javascript/collapsible/collapsibleAttribute");
+    });
+
+    it('must register the collapsible body attribute', () => {
+        expect(sut.resources)
+            .toContain("./javascript/collapsible/collapsibleBodyAttribute");
+    });
+
+    it("must register the collapsible header attribute", () => {
+        expect(sut.resources)
+            .toContain('./javascript/collapsible/collapsibleHeaderAttribute');
+    });
 });
 
 describe('the Aurelia Materialize CSS configuration with the option enableAttributes false', () => {
-  var mockedConfiguration;
+    let sut;
 
-  beforeEach(() => {
-    mockedConfiguration = new ConfigStub();
-    let options = new MaterializeCssOptions();
-    options.enableAttributes = false;
-    configure(mockedConfiguration, options);
-  });
+    beforeEach(() => {
+        sut = new ConfigStub();
+        let options = new MaterializeCssOptions();
+        options.enableAttributes = false;
+        configure(sut, options);
+    });
+
+    it('must no register the collapsible attribute', () => {
+        expect(sut.resources)
+            .not.toContain('./javascript/collapsible/collapsibleAttribute');
+    });
+
+    it('must not register the collapsible body attribute', () => {
+        expect(sut.resources)
+            .not.toContain('./javascript/collapsible/collapsibleBodyAttribute');
+    });
+
+    it('must not register the collapsible header attribute', () => {
+        expect(sut.resources)
+            .not.toContain('./javascript/collapsible/collapsibleHeaderAttribute');
+    });
 });
 
 describe('the Aurelia Materialize CSS configuration with the option enableElements true', () => {
-  var mockedConfiguration;
+    let sut;
 
-  beforeEach(() => {
-    mockedConfiguration = new ConfigStub();
-    let options = new MaterializeCssOptions();
-    options.enableElements = true;
-    configure(mockedConfiguration, options);
-  });
+    beforeEach(() => {
+        sut = new ConfigStub();
+        let options = new MaterializeCssOptions();
+        options.enableElements = true;
+        configure(sut, options);
+    });
+
+    it('must register the collapsible element', () => {
+        expect(sut.resources)
+            .toContain('./javascript/collapsible/collapsibleElement');
+    });
+
+    it('must register the collapsible body element', () => {
+        expect(sut.resources)
+            .toContain('./javascript/collapsible/collapsibleBodyElement');
+    });
+
+    it('must register the collapsible header element', () => {
+        expect(sut.resources)
+            .toContain('./javascript/collapsible/collapsibleHeaderElement');
+    });
+
+    it('must register the collapsible item element', () => {
+        expect(sut.resources)
+            .toContain('./javascript/collapsible/collapsibleItemElement');
+    });
 });
 
 describe('the Aurelia Materialize CSS configuration with the option enableElements false', () => {
-  var mockedConfiguration;
+    let sut;
 
-  beforeEach(() => {
-    mockedConfiguration = new ConfigStub();
-    let options = new MaterializeCssOptions();
-    options.enableElements = false;
-    configure(mockedConfiguration, options);
-  });
+    beforeEach(() => {
+        sut = new ConfigStub();
+        let options = new MaterializeCssOptions();
+        options.enableElements = false;
+        configure(sut, options);
+    });
+
+    it('must not register the collapsible element', () => {
+        expect(sut.resources)
+            .not.toContain('./javascript/collapsible/collapsibleElement');
+    });
+
+    it('must not register the collapsible body element', () => {
+        expect(sut.resources)
+            .not.toContain('./javascript/collapsible/collapsibleBodyElement');
+    });
+
+    it('must not register the collapsible header element', () => {
+        expect(sut.resources)
+            .not.toContain('./javascript/collapsible/collapsibleHeaderElement');
+    });
+
+    it('must not register the collapsible item element', () => {
+        expect(sut.resources)
+            .not.toContain('./javascript/collapsible/collapsibleItemElement');
+    });
 });
