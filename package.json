@@ -59,45 +59,19 @@
       "dist": "dist/amd"
     },
     "dependencies": {
+      "@eriklieben/materialize-css": "npm:@eriklieben/materialize-css@^0.97.5",
       "aurelia-binding": "npm:aurelia-binding@^1.0.0-beta.1.2.2",
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@^1.0.0-beta.1.1.5",
       "aurelia-framework": "npm:aurelia-framework@^1.0.0-beta.1.1.4",
       "aurelia-pal": "npm:aurelia-pal@^1.0.0-beta.1.1.1",
       "aurelia-pal-browser": "npm:aurelia-pal-browser@^1.0.0-beta.1.1.4",
       "aurelia-polyfills": "npm:aurelia-polyfills@^1.0.0-beta.1.0.6",
-      "aurelia-templating": "npm:aurelia-templating@^1.0.0-beta.1.1.4",
-      "components/jquery": "^2.2.1",
-      "eriklieben/materialize": "^0.97.5"
+      "aurelia-templating": "npm:aurelia-templating@^1.0.0-beta.1.1.4"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
       "babel-runtime": "npm:babel-runtime@^5.8.24",
       "core-js": "npm:core-js@^1.1.4"
-    },
-    "overrides": {
-      "github:eriklieben/materialize@0.97.5": {
-        "format": "global",
-        "files": [
-          "dist/js/materialize.js",
-          "dist/css/materialize.css",
-          "dist/font/**/*",
-          "extras/noUiSlider/*"
-        ],
-        "main": "dist/js/materialize",
-        "dependencies": {
-          "jquery": "github:components/jquery",
-          "css": "github:systemjs/plugin-css"
-        },
-        "shim": {
-          "dist/js/materialize": {
-            "deps": [
-              "jquery",
-              "../css/materialize.css!"
-            ],
-            "exports": "$"
-          }
-        }
-      }
     }
   }
 }

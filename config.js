@@ -13,6 +13,7 @@ System.config({
   },
 
   map: {
+    "@eriklieben/materialize-css": "npm:@eriklieben/materialize-css@0.97.5",
     "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.2.2",
     "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.1.5",
     "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.1.4",
@@ -22,13 +23,7 @@ System.config({
     "aurelia-templating": "npm:aurelia-templating@1.0.0-beta.1.1.4",
     "babel": "npm:babel-core@5.8.35",
     "babel-runtime": "npm:babel-runtime@5.8.35",
-    "components/jquery": "github:components/jquery@2.2.1",
     "core-js": "npm:core-js@1.2.6",
-    "eriklieben/materialize": "github:eriklieben/materialize@0.97.5",
-    "github:eriklieben/materialize@0.97.5": {
-      "css": "github:systemjs/plugin-css@0.1.20",
-      "jquery": "github:components/jquery@2.2.1"
-    },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
@@ -40,6 +35,10 @@ System.config({
     },
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
+    },
+    "npm:@eriklieben/materialize-css@0.97.5": {
+      "css": "github:systemjs/plugin-css@0.1.20",
+      "jquery": "npm:jquery@2.2.2"
     },
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
