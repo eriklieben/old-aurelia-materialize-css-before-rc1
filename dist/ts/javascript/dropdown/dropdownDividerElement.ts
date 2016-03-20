@@ -1,5 +1,5 @@
 import { customElement, containerless, inlineView } from "aurelia-framework";
-import { config } from "../../config";
+import { config } from "./../../config";
 
 @customElement(config.dropdownDivider)
 @containerless

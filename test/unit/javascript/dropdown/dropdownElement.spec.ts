@@ -1,10 +1,10 @@
-import { DropdownElement } from "../../../../src/javascript/dropdown/dropdownElement";
-import { config } from "../../../../src/config";
+import { DropdownElement } from "./../../../../src/javascript/dropdown/dropdownElement";
+import { config } from "./../../../../src/config";
 import { Container } from "aurelia-dependency-injection";
 import { TemplatingEngine } from "aurelia-templating";
 import { DOM } from "aurelia-pal";
 
-import "eriklieben/materialize";
+import "@eriklieben/materialize-css";
 
 describe("the Aurelia Materialize CSS DropdownElement", () => {
     let sut, templatingEngine, container, defaultOptions;

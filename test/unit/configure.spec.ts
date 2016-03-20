@@ -1,5 +1,5 @@
-import {configure} from "../../src/index";
-import MaterializeCssOptions from "../../src/index";
+import {configure} from "./../../src/index";
+import MaterializeCssOptions from "./../../src/index";
 
 class ConfigStub {
 

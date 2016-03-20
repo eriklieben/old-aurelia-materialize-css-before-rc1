@@ -1,4 +1,4 @@
-import "eriklieben/materialize";
+import "@eriklieben/materialize-css";
 import { FrameworkConfiguration } from "aurelia-framework";
 import * as materialConfig from "./config";
 
