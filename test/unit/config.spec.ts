@@ -1,4 +1,4 @@
-import {config} from "../../src/config";
+import {config} from "./../../src/config";
 
 describe("the Aurelia Materialize CSS config", () => {
 

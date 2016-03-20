@@ -1,9 +1,9 @@
-import { CollapsibleElement } from "../../../../src/javascript/collapsible/collapsibleElement";
+import { CollapsibleElement } from "./../../../../src/javascript/collapsible/collapsibleElement";
 import { Container } from "aurelia-dependency-injection";
 import { TemplatingEngine } from "aurelia-templating";
 import { DOM } from "aurelia-pal";
 
-import "eriklieben/materialize";
+import "@eriklieben/materialize-css";
 
 describe("the Aurelia Materialize CSS CollapsibleElement", () => {
     let sut, templatingEngine, container;

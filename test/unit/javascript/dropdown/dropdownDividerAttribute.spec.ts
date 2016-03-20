@@ -1,9 +1,9 @@
-import { DropdownDividerAttribute } from "../../../../src/javascript/dropdown/dropdownDividerAttribute";
+import { DropdownDividerAttribute } from "./../../../../src/javascript/dropdown/dropdownDividerAttribute";
 import { Container } from "aurelia-dependency-injection";
 import { TemplatingEngine } from "aurelia-templating";
 import { DOM } from "aurelia-pal";
 
-import "eriklieben/materialize";
+import "@eriklieben/materialize-css";
 
 describe("the Aurelia Materialize CSS DropdownDividerAttribute", () => {
     let sut, templatingEngine, container;

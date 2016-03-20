@@ -1,9 +1,9 @@
-import { CollapsibleHeaderAttribute } from "../../../../src/javascript/collapsible/collapsibleHeaderAttribute";
+import { CollapsibleHeaderAttribute } from "./../../../../src/javascript/collapsible/collapsibleHeaderAttribute";
 import { Container } from "aurelia-dependency-injection";
 import { TemplatingEngine } from "aurelia-templating";
 import { DOM } from "aurelia-pal";
 
-import "eriklieben/materialize";
+import "@eriklieben/materialize-css";
 
 describe("the Aurelia Materialize CSS CollapsibleHeaderAttribute", () => {
     let sut, templatingEngine, container;
