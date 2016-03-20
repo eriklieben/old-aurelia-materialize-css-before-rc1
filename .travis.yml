@@ -9,10 +9,12 @@ cache:
 branches:
   only:
   - master
+before_install:
+- npm install -g jspm
+- jspm config registries.github.auth $JSPM_GITHUB_AUTH_TOKEN
 install:
-- npm install
-- node_modules/.bin/jspm config registries.github.auth $JSPM_GITHUB_AUTH_TOKEN
-- node_modules/.bin/jspm install
+- npm i
+- jspm i
 script:
 - gulp build
 - gulp test
