@@ -63,10 +63,8 @@
       "aurelia-pal-browser": "npm:aurelia-pal-browser@^1.0.0-beta.1.1.4",
       "aurelia-polyfills": "npm:aurelia-polyfills@^1.0.0-beta.1.0.6",
       "aurelia-templating": "npm:aurelia-templating@^1.0.0-beta.1.1.4",
-      "aurelia/templating": "^0.17.5",
       "components/jquery": "^2.2.1",
-      "eriklieben/materialize": "^0.97.5",
-      "ts": "frankwallis/plugin-typescript@^4.0.2"
+      "eriklieben/materialize": "^0.97.5"
     },
     "devDependencies": {
       "babel": "babel/babel-core@^5.8.24",
