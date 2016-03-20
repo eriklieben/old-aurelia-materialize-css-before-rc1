@@ -1,4 +1,4 @@
-import { customElement, containerless, bindable, bindingMode } from "aurelia-framework";
+import { bindable, bindingMode, containerless, customElement } from "aurelia-framework";
 import { config } from "../../config";
 
 @customElement(config.dropdown)
@@ -32,7 +32,7 @@ export class DropdownElement {
     @bindable({ defaultBindingMode: bindingMode.oneTime, defaultValue: 225 })
     public outDuration: number;
 
-    public dropdownBtn;
+    public dropdownBtn: HTMLAnchorElement;
 
     public attached() {
 
