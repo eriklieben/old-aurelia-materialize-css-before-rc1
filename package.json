@@ -38,7 +38,9 @@
     "karma-chrome-launcher": "^0.1.7",
     "karma-coverage": "^0.3.1",
     "karma-jasmine": "^0.3.5",
+    "karma-phantomjs-launcher": "^1.0.0",
     "karma-systemjs": "^0.12.0",
+    "phantomjs-prebuilt": "^2.1.6",
     "require-dir": "^0.1.0",
     "run-sequence": "^1.0.2",
     "systemjs": "^0.19.24",
@@ -67,9 +69,9 @@
       "eriklieben/materialize": "^0.97.5"
     },
     "devDependencies": {
-      "babel": "babel/babel-core@^5.8.24",
-      "babel-runtime": "babel/babel-runtime@^5.8.24",
-      "core-js": "zloirock/core-js@^1.1.4"
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
     },
     "overrides": {
       "github:eriklieben/materialize@0.97.5": {

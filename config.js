@@ -3,8 +3,6 @@ System.config({
   transpiler: "babel",
   babelOptions: {
     "optional": [
-      "es7.decorators",
-      "es7.classProperties",
       "runtime",
       "optimisation.modules.system"
     ]
@@ -15,61 +13,21 @@ System.config({
   },
 
   map: {
-    "aurelia-binding": "github:aurelia/binding@0.11.4",
+    "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.2.2",
     "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.1.5",
     "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.1.4",
     "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.1.1",
     "aurelia-pal-browser": "npm:aurelia-pal-browser@1.0.0-beta.1.1.4",
     "aurelia-polyfills": "npm:aurelia-polyfills@1.0.0-beta.1.0.6",
     "aurelia-templating": "npm:aurelia-templating@1.0.0-beta.1.1.4",
-    "aurelia/binding": "github:aurelia/binding@0.11.4",
-    "aurelia/templating": "github:aurelia/templating@0.17.5",
     "babel": "npm:babel-core@5.8.35",
     "babel-runtime": "npm:babel-runtime@5.8.35",
     "components/jquery": "github:components/jquery@2.2.1",
     "core-js": "npm:core-js@1.2.6",
-    "eriklieben/materialize": "github:eriklieben/materialize@aurelia",
-    "ts": "github:frankwallis/plugin-typescript@4.0.2",
-    "github:aurelia/binding@0.11.4": {
-      "aurelia-metadata": "github:aurelia/metadata@0.10.1",
-      "aurelia-pal": "github:aurelia/pal@0.3.0",
-      "aurelia-task-queue": "github:aurelia/task-queue@0.9.0",
-      "core-js": "npm:core-js@1.2.6"
-    },
-    "github:aurelia/dependency-injection@0.12.1": {
-      "aurelia-logging": "github:aurelia/logging@0.9.0",
-      "aurelia-metadata": "github:aurelia/metadata@0.10.1",
-      "aurelia-pal": "github:aurelia/pal@0.3.0",
-      "core-js": "npm:core-js@1.2.6"
-    },
-    "github:aurelia/loader@0.11.0": {
-      "aurelia-metadata": "github:aurelia/metadata@0.10.1",
-      "aurelia-path": "github:aurelia/path@0.11.0"
-    },
-    "github:aurelia/metadata@0.10.1": {
-      "aurelia-pal": "github:aurelia/pal@0.3.0",
-      "core-js": "npm:core-js@1.2.6"
-    },
-    "github:aurelia/task-queue@0.9.0": {
-      "aurelia-pal": "github:aurelia/pal@0.3.0"
-    },
-    "github:aurelia/templating@0.17.5": {
-      "aurelia-binding": "github:aurelia/binding@0.11.4",
-      "aurelia-dependency-injection": "github:aurelia/dependency-injection@0.12.1",
-      "aurelia-loader": "github:aurelia/loader@0.11.0",
-      "aurelia-logging": "github:aurelia/logging@0.9.0",
-      "aurelia-metadata": "github:aurelia/metadata@0.10.1",
-      "aurelia-pal": "github:aurelia/pal@0.3.0",
-      "aurelia-path": "github:aurelia/path@0.11.0",
-      "aurelia-task-queue": "github:aurelia/task-queue@0.9.0",
-      "core-js": "npm:core-js@1.2.6"
-    },
-    "github:eriklieben/materialize@aurelia": {
+    "eriklieben/materialize": "github:eriklieben/materialize@0.97.5",
+    "github:eriklieben/materialize@0.97.5": {
       "css": "github:systemjs/plugin-css@0.1.20",
       "jquery": "github:components/jquery@2.2.1"
-    },
-    "github:frankwallis/plugin-typescript@4.0.2": {
-      "typescript": "npm:typescript@1.8.9"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
