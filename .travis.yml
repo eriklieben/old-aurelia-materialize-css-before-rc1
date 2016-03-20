@@ -1,23 +1,21 @@
 language: node_js
 node_js:
-  - "stable"
-
+- stable
 sudo: false
-
 cache:
   directories:
-    - node_modules
-    - jspm_packages
-
+  - node_modules
+  - jspm_packages
 branches:
   only:
-    - master
-
+  - master
 install:
-  - npm install
-  - node_modules/.bin/jspm config registries.github.auth $JSPM_GITHUB_AUTH_TOKEN
-  - node_modules/.bin/jspm install
-
+- npm install
+- node_modules/.bin/jspm config registries.github.auth $JSPM_GITHUB_AUTH_TOKEN
+- node_modules/.bin/jspm install
 script:
-  - gulp build
-  - gulp test
+- gulp build
+- gulp test
+env:
+  global:
+    secure: NHbEnmNxu+Cjihsq8qt3f4h0msdQSu7tVytZZRQ1kMHtfS+OZy3wWAy2ng3Zgk3to0FA9npw8VmXxfqBRQVemPF+SA95Ak0QyHw7t97A1qpKiCkNZS+HtgYJplvAWexuExMDUGx+xZ1RdcC26VWh2A/ICdf870QJrC5jAJW2vJGq47tSW07Acj3bJ5hoEm1VXZzqv9VzKnysJL1Qxz9b44oE/BGYYiTUR1sEMnaOSdgHleSjtX+d9sWtEsP+70STQ96B6WZPIK8ytN2hZI1Pz0ALC3UpsgVfrGOw5agm8AVHQGFUUz5oNpeqXuOTSmabHKmN2D9zt/BX4yQ1AeJ43iADGjsA3bJgKxX1k+NOmwsKZ6EZryx6ze/EuwNk0fYJ49EpOtjE3f4LR/u8NklpTjZGvYt1nAay2VB85YsoIKMWfuXxDwDjcBUAHHxZs0Xi5M00dPxzNn58rgfzKaMZxAHRVNSik2pso1K8LZcrfVCh8rXHIEqiAzZcGsosAhBGOBEbU6hX+5u7gHvLXlHIWhm1uFMxeFSFq3Ky4cWG/76xe5x9pvo9aNRlha6XNdZliVFXrucOHW7OMsTcuXSfsejXOPKjitx5r4DBIBU2u87Yw1JDfUCQEPhdWOS3DigOfPYP5jb9k8axeGOXKKq9Nu612UNUcBAkqfL7Kja9u/o=
