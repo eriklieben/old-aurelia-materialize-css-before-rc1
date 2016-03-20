@@ -1,7 +1,7 @@
 
 import { customAttribute } from "aurelia-framework";
 import { inject } from "aurelia-dependency-injection";
-import { config } from "../../config";
+import { config } from "./../../config";
 
 @customAttribute(config.collapsible)
 @inject(Element)

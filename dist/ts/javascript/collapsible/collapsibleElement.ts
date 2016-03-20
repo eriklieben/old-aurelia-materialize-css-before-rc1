@@ -1,6 +1,6 @@
 import { customElement, containerless, bindable } from "aurelia-framework";
 import { bindingMode } from "aurelia-binding";
-import { config } from "../../config";
+import { config } from "./../../config";
 
 @customElement(config.collapsible)
 @containerless

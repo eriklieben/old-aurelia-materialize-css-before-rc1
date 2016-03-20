@@ -1,5 +1,5 @@
 import { bindable, bindingMode, containerless, customElement } from "aurelia-framework";
-import { config } from "../../config";
+import { config } from "./../../config";
 
 @customElement(config.dropdown)
 @containerless
