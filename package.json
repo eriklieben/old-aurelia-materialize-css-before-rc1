@@ -56,15 +56,16 @@
       "dist": "dist/amd"
     },
     "dependencies": {
-      "aurelia-binding": "aurelia/binding@^0.11.4",
+      "aurelia-binding": "npm:aurelia-binding@^1.0.0-beta.1.2.2",
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@^1.0.0-beta.1.1.5",
-      "aurelia-framework": "aurelia/framework@^1.0.0-beta.1.1.4",
+      "aurelia-framework": "npm:aurelia-framework@^1.0.0-beta.1.1.4",
       "aurelia-pal": "npm:aurelia-pal@^1.0.0-beta.1.1.1",
       "aurelia-pal-browser": "npm:aurelia-pal-browser@^1.0.0-beta.1.1.4",
-      "aurelia-polyfills": "aurelia/polyfills@^1.0.0-beta.1.0.6",
+      "aurelia-polyfills": "npm:aurelia-polyfills@^1.0.0-beta.1.0.6",
+      "aurelia-templating": "npm:aurelia-templating@^1.0.0-beta.1.1.4",
       "aurelia/templating": "^0.17.5",
       "components/jquery": "^2.2.1",
-      "eriklieben/materialize": "aurelia",
+      "eriklieben/materialize": "^0.97.5",
       "ts": "frankwallis/plugin-typescript@^4.0.2"
     },
     "devDependencies": {
@@ -73,7 +74,7 @@
       "core-js": "zloirock/core-js@^1.1.4"
     },
     "overrides": {
-      "github:eriklieben/materialize@aurelia": {
+      "github:eriklieben/materialize@0.97.5": {
         "format": "global",
         "files": [
           "dist/js/materialize.js",
