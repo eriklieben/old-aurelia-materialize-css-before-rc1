@@ -34,7 +34,7 @@ module.exports = function(config) {
     ],
     exclude: [],
     preprocessors: { },
-    reporters: ['progress'],
+    reporters: ['verbose'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
