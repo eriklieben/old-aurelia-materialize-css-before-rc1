@@ -46,9 +46,9 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
             .toContain("./javascript/dropdown/dropdownDividerAttribute");
     });
 
-    it('must register the media boxed attribute', () => {
+    it("must register the media boxed attribute", () => {
         expect(sut.resources)
-            .toContain('./javascript/media/boxedAttribute');
+            .toContain("./javascript/media/boxedAttribute");
     });
 });
 
@@ -87,9 +87,9 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
             .not.toContain("./javascript/dropdown/dropdownDividerAttribute");
     });
 
-    it('must not register the media boxed attribute', () => {
+    it("must not register the media boxed attribute", () => {
         expect(sut.resources)
-            .not.toContain('./javascript/media/boxedAttribute');
+            .not.toContain("./javascript/media/boxedAttribute");
     });
 });
 
@@ -138,14 +138,14 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
             .toContain("./javascript/dropdown/dropdownItemElement");
     });
 
-    it('must register the media slide element', () => {
+    it("must register the media slide element", () => {
         expect(sut.resources)
-            .toContain('./javascript/media/slideElement');
+            .toContain("./javascript/media/slideElement");
     });
 
-    it('must register the media slider element', () => {
+    it("must register the media slider element", () => {
         expect(sut.resources)
-            .toContain('./javascript/media/sliderElement');
+            .toContain("./javascript/media/sliderElement");
     });
 });
 
@@ -194,13 +194,13 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
             .not.toContain("./javascript/dropdown/dropdownItemElement");
     });
 
-    it('must not register the media slide element', () => {
+    it("must not register the media slide element", () => {
         expect(sut.resources)
-            .not.toContain('./javascript/media/slideElement');
+            .not.toContain("./javascript/media/slideElement");
     });
 
-    it('must not register the media slider element', () => {
+    it("must not register the media slider element", () => {
         expect(sut.resources)
-            .not.toContain('./javascript/media/sliderElement');
+            .not.toContain("./javascript/media/sliderElement");
     });
 });
