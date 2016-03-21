@@ -66,6 +66,15 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
             .toContain("./javascript/scrollspy/scrollspyAttribute");
     });
 
+    it("must register the select (forms) attribute", () => {
+        expect(sut.resources)
+            .toContain("./components/forms/selectAttribute");
+    });
+
+    it("must register the pickadate (forms) attribute", () => {
+        expect(sut.resources)
+            .toContain("./components/forms/pickadateAttribute");
+    });
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableAttributes false", () => {
@@ -122,6 +131,17 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
         expect(sut.resources)
             .not.toContain("./javascript/scrollspy/scrollspyAttribute");
     });
+
+    it("must not register the select (forms) attribute", () => {
+        expect(sut.resources)
+            .not.toContain("./components/forms/selectAttribute");
+    });
+
+    it("must not register the pickadate (forms) attribute", () => {
+        expect(sut.resources)
+            .not.toContain("./components/forms/pickadateAttribute");
+    });
+
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableElements true", () => {

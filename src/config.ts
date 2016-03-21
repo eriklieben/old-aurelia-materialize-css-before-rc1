@@ -23,6 +23,9 @@ export class Configuration {
     public pushpin = `${this.prefix}pushpin`.trim();
 
     public scrollSpy = `${this.prefix}scrollspy`.trim();
+
+    public materialSelect = `${this.prefix}select`.trim();
+    public pickadate = `${this.prefix}pickadate`.trim();
 }
 
 export var config = new Configuration();

@@ -69,4 +69,12 @@ describe("the Aurelia Materialize CSS config", () => {
     it("must have a property scrollSpy with the default value 'm:scrollspy'", () => {
         expect(config.scrollSpy).toBe("m:scrollspy");
     });
+
+    it("must have a property materialSelect with the default value 'm:select'", () => {
+        expect(config.materialSelect).toBe("m:select");
+    });
+
+    it("must have a property pickadate with the default value 'm:pickadate'", () => {
+        expect(config.pickadate).toBe("m:pickadate");
+    });
 });

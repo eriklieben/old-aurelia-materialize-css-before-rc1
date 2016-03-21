@@ -32,6 +32,9 @@ export function configure(config: FrameworkConfiguration, options: MaterializeCs
         "./javascript/pushpin/pushpinAttribute",
 
         "./javascript/scrollspy/scrollspyAttribute",
+
+        "./components/forms/selectAttribute",
+        "./components/forms/pickadateAttribute",
     ];
 
     let elements = [
