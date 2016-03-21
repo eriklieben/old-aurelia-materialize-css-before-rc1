@@ -1,8 +1,9 @@
-import { bindable, bindingMode, containerless, customElement } from "aurelia-framework";
+import { bindable, bindingMode, containerless, customElement, inlineView } from "aurelia-framework";
 import { config } from "./../../config";
 
 @customElement(config.slider)
 @containerless
+@inlineView("<template><div class='slider' ref='sliderDiv' id='${id}'><ul class='slides'><content></content></ul></div></template>")
 export class SliderElement {
 
     @bindable()

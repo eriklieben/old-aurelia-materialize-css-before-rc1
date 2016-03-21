@@ -26,6 +26,8 @@ export function configure(config: FrameworkConfiguration, options: MaterializeCs
         "./javascript/dropdown/dropdownDividerAttribute",
 
         "./javascript/media/boxedAttribute",
+
+        "./javascript/modals/modalTriggerAttribute",
     ];
 
     let elements = [
@@ -40,6 +42,10 @@ export function configure(config: FrameworkConfiguration, options: MaterializeCs
 
         "./javascript/media/slideElement",
         "./javascript/media/sliderElement",
+
+        "./javascript/modals/modalContentElement",
+        "./javascript/modals/modalElement",
+        "./javascript/modals/modalFooterElement",
     ];
 
     // Filter out attributes and elements
