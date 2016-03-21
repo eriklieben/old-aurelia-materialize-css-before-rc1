@@ -46,6 +46,10 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
             .toContain("./javascript/dropdown/dropdownDividerAttribute");
     });
 
+    it('must register the media boxed attribute', () => {
+        expect(sut.resources)
+            .toContain('./javascript/media/boxedAttribute');
+    });
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableAttributes false", () => {
@@ -81,6 +85,11 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
     it("must register the dropdown divider attribute", () => {
         expect(sut.resources)
             .not.toContain("./javascript/dropdown/dropdownDividerAttribute");
+    });
+
+    it('must not register the media boxed attribute', () => {
+        expect(sut.resources)
+            .not.toContain('./javascript/media/boxedAttribute');
     });
 });
 
@@ -128,6 +137,16 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
         expect(sut.resources)
             .toContain("./javascript/dropdown/dropdownItemElement");
     });
+
+    it('must register the media slide element', () => {
+        expect(sut.resources)
+            .toContain('./javascript/media/slideElement');
+    });
+
+    it('must register the media slider element', () => {
+        expect(sut.resources)
+            .toContain('./javascript/media/sliderElement');
+    });
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableElements false", () => {
@@ -173,5 +192,15 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
     it("must register the dropdown item element", () => {
         expect(sut.resources)
             .not.toContain("./javascript/dropdown/dropdownItemElement");
+    });
+
+    it('must not register the media slide element', () => {
+        expect(sut.resources)
+            .not.toContain('./javascript/media/slideElement');
+    });
+
+    it('must not register the media slider element', () => {
+        expect(sut.resources)
+            .not.toContain('./javascript/media/sliderElement');
     });
 });
