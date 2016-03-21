@@ -1,7 +1,6 @@
 import { SliderElement } from "./../../../../src/javascript/media/sliderElement";
 import { Container } from "aurelia-dependency-injection";
 import { TemplatingEngine } from "aurelia-templating";
-import { BindingEngine } from "aurelia-binding";
 import { DOM } from "aurelia-pal";
 
 import "@eriklieben/materialize-css";
