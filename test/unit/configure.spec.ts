@@ -60,6 +60,12 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
         expect(sut.resources)
             .toContain("./javascript/pushpin/pushpinAttribute");
     });
+
+    it("must register the scrollspy attribute", () => {
+        expect(sut.resources)
+            .toContain("./javascript/scrollspy/scrollspyAttribute");
+    });
+
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableAttributes false", () => {
@@ -110,6 +116,11 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
     it("must not register the pushpin attribute", () => {
         expect(sut.resources)
             .not.toContain("./javascript/pushpin/pushpinAttribute");
+    });
+
+    it("must not register the scrollspy attribute", () => {
+        expect(sut.resources)
+            .not.toContain("./javascript/scrollspy/scrollspyAttribute");
     });
 });
 
@@ -187,6 +198,11 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
         expect(sut.resources)
             .toContain("./javascript/pushpin/pushpinElement");
     });
+
+    it("must register the scrollspy element", () => {
+        expect(sut.resources)
+            .toContain("./javascript/scrollspy/scrollspyElement");
+    });
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableElements false", () => {
@@ -262,5 +278,10 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
     it("must not register the pushin element", () => {
         expect(sut.resources)
             .not.toContain("./javascript/pushpin/pushpinElement");
+    });
+
+    it("must not register the scrollspy element", () => {
+        expect(sut.resources)
+            .not.toContain("./javascript/scrollspy/scrollspyElement");
     });
 });

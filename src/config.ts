@@ -21,6 +21,8 @@ export class Configuration {
     public modalFooter = `${this.prefix}modal-footer`.trim();
 
     public pushpin = `${this.prefix}pushpin`.trim();
+
+    public scrollSpy = `${this.prefix}scrollspy`.trim();
 }
 
 export var config = new Configuration();
