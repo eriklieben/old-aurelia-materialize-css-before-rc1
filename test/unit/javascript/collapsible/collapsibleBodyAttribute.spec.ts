@@ -25,13 +25,13 @@ describe("the Aurelia Materialize CSS CollapsibleBodyAttribute", () => {
         expect(sut.element.classList).toContain("collapsible-body");
     });
 
-    it("must remove the class 'collapsible-body' from the given element on deattached", () => {
+    it("must remove the class 'collapsible-body' from the given element on detached", () => {
 
         // arrange
         sut.element.classList.add("collapsible-body");
 
         // act
-        sut.deattached();
+        sut.detached();
 
         // assert
         expect(sut.element.classList).not.toContain("collapsible-body");

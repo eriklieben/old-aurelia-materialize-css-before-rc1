@@ -13,7 +13,7 @@ export class DropdownDividerAttribute {
         this.element.classList.add("divider");
     }
 
-    public deattached() {
+    public detached() {
         this.element.classList.remove("divider");
     }
 }

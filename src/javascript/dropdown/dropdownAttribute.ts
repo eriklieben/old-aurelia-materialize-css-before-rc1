@@ -50,7 +50,7 @@ export class DropdownAttribute {
         $(this.element).dropdown(options);
     }
 
-    public deattached() {
+    public detached() {
         this.element.classList.remove("dropdown-button");
     }
 }

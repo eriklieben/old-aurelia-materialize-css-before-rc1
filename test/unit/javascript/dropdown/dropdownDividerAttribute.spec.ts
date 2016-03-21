@@ -25,13 +25,13 @@ describe("the Aurelia Materialize CSS DropdownDividerAttribute", () => {
         expect(sut.element.classList).toContain("divider");
     });
 
-    it("must remove the class 'divider' from the given element on deattached", () => {
+    it("must remove the class 'divider' from the given element on detached", () => {
 
         // arrange
         sut.element.classList.add("divider");
 
         // act
-        sut.deattached();
+        sut.detached();
 
         // assert
         expect(sut.element.classList).not.toContain("divider");

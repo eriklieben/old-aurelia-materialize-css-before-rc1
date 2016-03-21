@@ -150,13 +150,13 @@ describe("the Aurelia Materialize CSS DropdownAttribute", () => {
         expect(sut.element.classList).toContain("dropdown-button");
     });
 
-    it("must remove the class 'dropdown-button' from the given element on deattached", () => {
+    it("must remove the class 'dropdown-button' from the given element on detached", () => {
 
         // arrange
         sut.element.classList.add("dropdown-button");
 
         // act
-        sut.deattached();
+        sut.detached();
 
         // assert
         expect(sut.element.classList).not.toContain("dropdown-button");

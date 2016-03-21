@@ -25,13 +25,13 @@ describe("the Aurelia Materialize CSS CollapsibleHeaderAttribute", () => {
         expect(sut.element.classList).toContain("collapsible-header");
     });
 
-    it("must remove the class 'collapsible-header' from the given element on deattached", () => {
+    it("must remove the class 'collapsible-header' from the given element on detached", () => {
 
         // arrange
         sut.element.classList.add("collapsible-header");
 
         // act
-        sut.deattached();
+        sut.detached();
 
         // assert
         expect(sut.element.classList).not.toContain("collapsible-header");
