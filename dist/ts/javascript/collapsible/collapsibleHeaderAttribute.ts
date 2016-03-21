@@ -13,7 +13,7 @@ export class CollapsibleHeaderAttribute {
         this.element.classList.add("collapsible-header");
     }
 
-    public deattached() {
+    public detached() {
         this.element.classList.remove("collapsible-header");
     }
 }

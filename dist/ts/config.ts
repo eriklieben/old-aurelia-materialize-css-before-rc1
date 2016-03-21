@@ -19,6 +19,8 @@ export class Configuration {
     public modalTrigger = `${this.prefix}modal-trigger`.trim();
     public modalContent = `${this.prefix}modal-content`.trim();
     public modalFooter = `${this.prefix}modal-footer`.trim();
+
+    public pushpin = `${this.prefix}pushpin`.trim();
 }
 
 export var config = new Configuration();

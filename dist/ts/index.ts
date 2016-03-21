@@ -28,6 +28,8 @@ export function configure(config: FrameworkConfiguration, options: MaterializeCs
         "./javascript/media/boxedAttribute",
 
         "./javascript/modals/modalTriggerAttribute",
+
+        "./javascript/pushpin/pushpinAttribute",
     ];
 
     let elements = [
@@ -46,6 +48,8 @@ export function configure(config: FrameworkConfiguration, options: MaterializeCs
         "./javascript/modals/modalContentElement",
         "./javascript/modals/modalElement",
         "./javascript/modals/modalFooterElement",
+
+        "./javascript/pushpin/pushpinElement",
     ];
 
     // Filter out attributes and elements

@@ -13,7 +13,7 @@ export class CollapsibleBodyAttribute {
         this.element.classList.add("collapsible-body");
     }
 
-    public deattached() {
+    public detached() {
         this.element.classList.remove("collapsible-body");
     }
 
