@@ -2,8 +2,8 @@ import "@eriklieben/materialize-css";
 import { FrameworkConfiguration } from "aurelia-framework";
 import * as materialConfig from "./config";
 
-import {ToastService as toastService} from "./javascript/toast/ToastService";
-export const ToastService = new toastService();
+// import {ToastService as toastService} from "./javascript/toast/ToastService";
+// export const ToastService = new toastService();
 
 
 export class MaterializeCssOptions {
@@ -39,6 +39,8 @@ export function configure(config: FrameworkConfiguration, options: MaterializeCs
 
         "./components/forms/selectAttribute",
         "./components/forms/pickadateAttribute",
+
+        "./components/badge/badgeAttribute",
     ];
 
     let elements = [
@@ -61,6 +63,8 @@ export function configure(config: FrameworkConfiguration, options: MaterializeCs
         "./javascript/pushpin/pushpinElement",
 
         "./javascript/scrollspy/scrollspyElement",
+
+        "./components/badge/badgeElement",
     ];
 
     // Filter out attributes and elements

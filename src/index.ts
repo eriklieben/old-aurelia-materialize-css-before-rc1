@@ -5,7 +5,6 @@ import * as materialConfig from "./config";
 import {ToastService as toastService} from "./javascript/toast/ToastService";
 export const ToastService = new toastService();
 
-
 export class MaterializeCssOptions {
     public enableAttributes = true;
     public enableElements = true;
@@ -39,6 +38,8 @@ export function configure(config: FrameworkConfiguration, options: MaterializeCs
 
         "./components/forms/selectAttribute",
         "./components/forms/pickadateAttribute",
+
+        "./components/badge/badgeAttribute",
     ];
 
     let elements = [
@@ -61,6 +62,8 @@ export function configure(config: FrameworkConfiguration, options: MaterializeCs
         "./javascript/pushpin/pushpinElement",
 
         "./javascript/scrollspy/scrollspyElement",
+
+        "./components/badge/badgeElement",
     ];
 
     // Filter out attributes and elements

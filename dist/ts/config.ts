@@ -24,6 +24,8 @@ export class Configuration {
 
     public scrollSpy = `${this.prefix}scrollspy`.trim();
 
+    public badge = `${this.prefix}badge`.trim();
+
     public materialSelect = `${this.prefix}select`.trim();
     public pickadate = `${this.prefix}pickadate`.trim();
 }

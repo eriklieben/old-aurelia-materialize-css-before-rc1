@@ -75,6 +75,11 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
         expect(sut.resources)
             .toContain("./components/forms/pickadateAttribute");
     });
+
+    it("must register the badge attribute", () => {
+        expect(sut.resources)
+            .toContain("./components/badge/badgeAttribute");
+    });
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableAttributes false", () => {
@@ -142,6 +147,10 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
             .not.toContain("./components/forms/pickadateAttribute");
     });
 
+    it("must not register the badge attribute", () => {
+        expect(sut.resources)
+            .not.toContain("./components/badge/badgeAttribute");
+    });
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableElements true", () => {
@@ -223,6 +232,11 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
         expect(sut.resources)
             .toContain("./javascript/scrollspy/scrollspyElement");
     });
+
+    it("must register the badge element", () => {
+        expect(sut.resources)
+            .toContain("./components/badge/badgeElement");
+    });
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableElements false", () => {
@@ -303,5 +317,10 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
     it("must not register the scrollspy element", () => {
         expect(sut.resources)
             .not.toContain("./javascript/scrollspy/scrollspyElement");
+    });
+
+    it("must not register the badge element", () => {
+        expect(sut.resources)
+            .not.toContain("./components/badge/badgeElement");
     });
 });

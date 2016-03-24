@@ -77,4 +77,8 @@ describe("the Aurelia Materialize CSS config", () => {
     it("must have a property pickadate with the default value 'm:pickadate'", () => {
         expect(config.pickadate).toBe("m:pickadate");
     });
+
+    it("must have a property badge with the default value 'm:badge'", () => {
+        expect(config.badge).toBe("m:badge");
+    });
 });
