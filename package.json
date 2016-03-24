@@ -60,13 +60,13 @@
     },
     "dependencies": {
       "@eriklieben/materialize-css": "npm:@eriklieben/materialize-css@^0.97.5",
-      "aurelia-binding": "npm:aurelia-binding@^1.0.0-beta.1.2.2",
-      "aurelia-dependency-injection": "npm:aurelia-dependency-injection@^1.0.0-beta.1.1.5",
-      "aurelia-framework": "npm:aurelia-framework@^1.0.0-beta.1.1.4",
-      "aurelia-pal": "npm:aurelia-pal@^1.0.0-beta.1.1.1",
-      "aurelia-pal-browser": "npm:aurelia-pal-browser@^1.0.0-beta.1.1.4",
-      "aurelia-polyfills": "npm:aurelia-polyfills@^1.0.0-beta.1.0.6",
-      "aurelia-templating": "npm:aurelia-templating@^1.0.0-beta.1.1.4"
+      "aurelia-binding": "npm:aurelia-binding@^1.0.0-beta.1.3.0",
+      "aurelia-dependency-injection": "npm:aurelia-dependency-injection@^1.0.0-beta.1.2.0",
+      "aurelia-framework": "npm:aurelia-framework@^1.0.0-beta.1.2.0",
+      "aurelia-pal": "npm:aurelia-pal@^1.0.0-beta.1.2.0",
+      "aurelia-pal-browser": "npm:aurelia-pal-browser@^1.0.0-beta.1.2.0",
+      "aurelia-polyfills": "npm:aurelia-polyfills@^1.0.0-beta.1.1.0",
+      "aurelia-templating": "npm:aurelia-templating@^1.0.0-beta.1.2.0"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
