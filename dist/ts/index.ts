@@ -2,9 +2,8 @@ import "@eriklieben/materialize-css";
 import { FrameworkConfiguration } from "aurelia-framework";
 import * as materialConfig from "./config";
 
-// import {ToastService as toastService} from "./javascript/toast/ToastService";
-// export const ToastService = new toastService();
-
+import {ToastService as toastService} from "./javascript/toast/ToastService";
+export const ToastService = new toastService();
 
 export class MaterializeCssOptions {
     public enableAttributes = true;

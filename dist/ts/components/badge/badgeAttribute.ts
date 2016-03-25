@@ -6,7 +6,7 @@ import { config } from "./../../config";
 @inject(Element)
 export class BadgeAttribute {
 
-    constructor(private element:Element) {
+    constructor(private element: Element) {
 
     }
 
