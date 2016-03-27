@@ -58,5 +58,4 @@ describe("the Aurelia Materialize CSS BadgeAttribute", () => {
         // assert
         expect(sut.element.classList).not.toContain("new");
     });
-
 });
