@@ -1,3 +1,10 @@
+<a name="0.0.12"></a>
+## 0.0.12 (2016-03-27)
+
+* chore(materialize) update materialize-css ref package to latest commit ([b551529](https://github.com/eriklieben/aurelia-materialize-css/commit/b551529))
+
+
+
 <a name="0.0.11"></a>
 ## 0.0.11 (2016-03-27)
 
