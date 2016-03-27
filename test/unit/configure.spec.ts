@@ -80,6 +80,11 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
         expect(sut.resources)
             .toContain("./components/badge/badgeAttribute");
     });
+
+    it("must register the icon attribute", () => {
+        expect(sut.resources)
+            .toContain("./components/icon/iconAttribute");
+    });
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableAttributes false", () => {
@@ -150,6 +155,11 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
     it("must not register the badge attribute", () => {
         expect(sut.resources)
             .not.toContain("./components/badge/badgeAttribute");
+    });
+
+    it("must not register the icon attribute", () => {
+        expect(sut.resources)
+            .not.toContain("./components/icon/iconAttribute");
     });
 });
 
@@ -237,6 +247,11 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
         expect(sut.resources)
             .toContain("./components/badge/badgeElement");
     });
+
+    it("must register the icon element", () => {
+        expect(sut.resources)
+            .toContain("./components/icon/iconElement");
+    });
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableElements false", () => {
@@ -322,5 +337,10 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
     it("must not register the badge element", () => {
         expect(sut.resources)
             .not.toContain("./components/badge/badgeElement");
+    });
+
+    it("must not register the icon element", () => {
+        expect(sut.resources)
+            .not.toContain("./components/icon/iconElement");
     });
 });

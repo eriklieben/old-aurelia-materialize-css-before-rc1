@@ -81,4 +81,8 @@ describe("the Aurelia Materialize CSS config", () => {
     it("must have a property badge with the default value 'm:badge'", () => {
         expect(config.badge).toBe("m:badge");
     });
+
+    it("must have a property icon with the default value 'm:icon'", () => {
+        expect(config.icon).toBe("m:icon");
+    });
 });
