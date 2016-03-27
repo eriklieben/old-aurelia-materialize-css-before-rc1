@@ -1,3 +1,15 @@
+<a name="0.0.10"></a>
+## 0.0.10 (2016-03-27)
+
+* doc(readme) update readme configuration properties ([26e9b38](https://github.com/eriklieben/aurelia-materialize-css/commit/26e9b38))
+* feat(breadcrumbs) added breadcrumb element & attribute with tests ([b9196c6](https://github.com/eriklieben/aurelia-materialize-css/commit/b9196c6))
+* feat(button) Add button element & attribute with tests ([2520280](https://github.com/eriklieben/aurelia-materialize-css/commit/2520280))
+* feat(card) add card elements & attributes with tests and update README.md ([8f0383e](https://github.com/eriklieben/aurelia-materialize-css/commit/8f0383e))
+* feat(config) Make configuration options optional ([6c37cb7](https://github.com/eriklieben/aurelia-materialize-css/commit/6c37cb7))
+* fix(icon) allow type to be '' and type to be set as content ([c5cda43](https://github.com/eriklieben/aurelia-materialize-css/commit/c5cda43))
+
+
+
 <a name="0.0.9"></a>
 ## 0.0.9 (2016-03-27)
 

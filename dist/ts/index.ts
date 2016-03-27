@@ -5,17 +5,27 @@ import * as materialConfig from "./config";
 // import {ToastService as toastService} from "./javascript/toast/ToastService";
 // export const ToastService = new toastService();
 
-export class MaterializeCssOptions {
+export class MaterializeCssOptions implements IMaterializeCssOptions {
     public enableAttributes = true;
     public enableElements = true;
 
     public attributeFilter: (value: string, index: number, array: string[]) => boolean = undefined;
     public elementFilter: (value: string, index: number, array: string[]) => boolean = undefined;
 
-    public configuration = new materialConfig.Configuration();
+    public configuration: materialConfig.IConfiguration = new materialConfig.Configuration();
 }
 
-export function configure(config: FrameworkConfiguration, options: MaterializeCssOptions) {
+export interface IMaterializeCssOptions {
+    enableAttributes?: boolean;
+    enableElements?: boolean;
+
+    attributeFilter?: (value: string, index: number, array: string[]) => boolean;
+    elementFilter?: (value: string, index: number, array: string[]) => boolean;
+
+    configuration?: materialConfig.IConfiguration;
+}
+
+export function configure(config: FrameworkConfiguration, options?: IMaterializeCssOptions) {
 
     options = Object.assign(new MaterializeCssOptions(), options);
     materialConfig.config = options.configuration;
@@ -41,6 +51,16 @@ export function configure(config: FrameworkConfiguration, options: MaterializeCs
 
         "./components/badge/badgeAttribute",
         "./components/icon/iconAttribute",
+
+        "./components/breadcrumbs/breadcrumbAttribute",
+        "./components/breadcrumbs/breadcrumbsAttribute",
+
+        "./components/card/cardAttribute",
+        "./components/card/cardTitleAttribute",
+        "./components/card/cardActionAttribute",
+        "./components/card/cardImageAttribute",
+        "./components/card/cardRevealAttribute",
+        "./components/card/cardPanelAttribute",
     ];
 
     let elements = [
@@ -66,6 +86,16 @@ export function configure(config: FrameworkConfiguration, options: MaterializeCs
 
         "./components/badge/badgeElement",
         "./components/icon/iconElement",
+
+        "./components/breadcrumbs/breadcrumbElement",
+        "./components/breadcrumbs/breadcrumbsElement",
+
+        "./components/card/cardElement",
+        "./components/card/cardTitleElement",
+        "./components/card/cardActionElement",
+        "./components/card/cardImageElement",
+        "./components/card/cardRevealElement",
+        "./components/card/cardPanelElement",
     ];
 
     // Filter out attributes and elements
