@@ -2,6 +2,7 @@
 ## 0.0.9 (2016-03-27)
 
 * chore(badge) remove blank line ([818fb9d](https://github.com/eriklieben/aurelia-materialize-css/commit/818fb9d))
+* chore(build) fix conventional changelog step ([afd133c](https://github.com/eriklieben/aurelia-materialize-css/commit/afd133c))
 * feat(icon) Add icon element and attribute with tests ([6a0f921](https://github.com/eriklieben/aurelia-materialize-css/commit/6a0f921))
 * fix(badge) don't add true to classList, but add css class new to classlist in BadgeElement ([b76b61c](https://github.com/eriklieben/aurelia-materialize-css/commit/b76b61c))
 * style(icon) resolve lint errors ([a2f3490](https://github.com/eriklieben/aurelia-materialize-css/commit/a2f3490))
