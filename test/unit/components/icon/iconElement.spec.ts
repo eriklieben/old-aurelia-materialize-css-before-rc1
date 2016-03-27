@@ -85,4 +85,30 @@ describe("the Aurelia Materialize CSS IconAttribute", () => {
         expect(sut.element.innerHTML).toBe("");
     });
 
+    it("must not replace innerHTML if type is '' on attached", () => {
+
+        // arrange
+        sut.element.innerHTML = "foo";
+        sut.type = "";
+
+        // act
+        sut.attached();
+
+        // assert
+        expect(sut.element.innerHTML).toBe("foo");
+    });
+
+    it("must leave innerHTML intact if type is '' on detached", () => {
+
+        // arrange
+        sut.element.innerHTML = "foo";
+        sut.type = "";
+
+        // act
+        sut.detached();
+
+        // assert
+        expect(sut.element.innerHTML).toBe("foo");
+    });
+
 });
