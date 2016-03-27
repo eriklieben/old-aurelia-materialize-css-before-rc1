@@ -15,29 +15,23 @@ Examples and how to use can be found at the [demo site](http://aurelia-materiali
 - [SystemJS plugin-css](https://github.com/systemjs/plugin-css/)
 
 #Installation
-Github
 ```
-jspm i github:eriklieben/aurelia-materialize-css
+jspm i npm:aurelia-materialize-css
 ```
-main.ts
+main.ts (typescript)
 ```typescript
 export function configure(aurelia: Aurelia) {
   aurelia.use
     .standardConfiguration()
     .developmentLogging()
-    .plugin("eriklieben/aurelia-materialize-css");
+    .plugin("aurelia-materialize-css");
 
   aurelia.start().then(() => aurelia.setRoot());
 }
 ```
-
-npm:
-```
-jspm i npm:aurelia-materialize-css
-```
-main.ts
-```typescript
-export function configure(aurelia: Aurelia) {
+main.js (javascript)
+```javascript
+export function configure(aurelia) {
   aurelia.use
     .standardConfiguration()
     .developmentLogging()
@@ -62,18 +56,35 @@ Allows you to supply ```MaterializeCssOptions``` options.
 | enableElements   | boolean          | true      | enable or disable all the elements                                |
 | attributeFilter  | (val) => boolean | undefined | func, allows custom logic to enable or disable attributes         | 
 | elementFilter    | (val) => boolean | undefined | func, allows custom logic to enable or disable elements           |
-| configuration    | Configuration    | ......... | configuration object allows custom naming of elements/ attributes |
+| configuration    | Configuration    | see below | configuration object allows custom naming of elements/ attributes |
 
 ##Configuration properties:
 
-| Property          | Default              | Description                                  |
-| ----------------- | -------------------- | -------------------------------------------- |
-| prefix            | m:                   | The prefix before each element or attribute  |
-| collapsible       | m:collapsible        | Name of the collapsible element or attribute |
-| collapsibleBody   | m:collapsible-body   | |
-| collapsibleHeader | m:collapsible-header | |
-| collapsibleItem   | m:collapsible-item   | |
-| dropdown          | m:dropdown           | |
-| dropdownDivider   | m:dropdown-divider   | |
-| dropdownItem      | m:dropdown-item      | |
+| Property          | Default                                         | Description                                         |
+| ----------------- | ----------------------------------------------- | --------------------------------------------------- |
+| prefix            | m:                                              | The prefix before each element or attribute         |
+| collapsible       | m:collapsible                                   | Name of the collapsible element or attribute        |
+| collapsibleBody   | m:collapsible-body                              | Name of the collapsible body element or attribute   |
+| collapsibleHeader | m:collapsible-header                            | Name of the collapsible header element or attribute |
+| collapsibleItem   | m:collapsible-item                              | Name of the collapsible item element or attribute   |
+| dropdown          | m:dropdown                                      | Name of the dropdown element or attribute           |
+| dropdownDivider   | m:dropdown-divider                              | Name of the dropdown divider element or attribute   |
+| dropdownItem      | m:dropdown-item                                 | Name of the dropdown item element or attribute      |
+| boxed             | m:boxed                                         | Name of the boxed element or attribute              |
+| slide             | m:slide                                         | Name of the slide element or attribute              |
+| slider            | m:slider                                        | Name of the slider element or attribute             |
+| modal             | m:modal                                         | Name of the modal element or attribute              |
+| modalTrigger      | m:modal-trigger                                 | Name of the modal trigger element or attribute      |
+| modalContent      | m:modal-content                                 | Name of the modal content element or attribute      |
+| modalFooter       | m:modal-footer                                  | Name of the modal footer element or attribute       |
+| pushpin           | m:pushpin                                       | Name of the pushpin element or attribute            |
+| scrollSpy         | m:scrollspy                                     | Name of the scroll spy element or attribute         |
+| badge             | m:badge                                         | Name of the badge element or attribute              |
+| icon              | m:icon                                          | Name of the icon element or attribute               |
+| button            | m:button                                        | Name of the button element or attribute             |
+| breadcrumb        | m:breadcrumb                                    | Name of the breadcrumb element or attribute         |
+| breadcrumbs       | m:breadcrumbs                                   | Name of the breadcrumbs element or attribute        |
+| materialSelect    | m:select                                        | Name of the material select element or attribute    |
+| pickadate         | m:pickadate                                     | Name of the pick a date element or attribute        |
+| allowedWaves      | light, red, yellow, orange, purple, green, teal | List of allowed waves classes                       |
 
