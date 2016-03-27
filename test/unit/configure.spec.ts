@@ -85,6 +85,16 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
         expect(sut.resources)
             .toContain("./components/icon/iconAttribute");
     });
+
+    it("must register the breadcrumb attribute", () => {
+        expect(sut.resources)
+            .toContain("./components/breadcrumbs/breadcrumbAttribute");
+    });
+
+    it("must register the breadcrumbs attribute", () => {
+        expect(sut.resources)
+            .toContain("./components/breadcrumbs/breadcrumbsAttribute");
+    });
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableAttributes false", () => {
@@ -160,6 +170,16 @@ describe("the Aurelia Materialize CSS configuration with the option enableAttrib
     it("must not register the icon attribute", () => {
         expect(sut.resources)
             .not.toContain("./components/icon/iconAttribute");
+    });
+
+    it("must not register the breadcrumb attribute", () => {
+        expect(sut.resources)
+            .not.toContain("./components/breadcrumbs/breadcrumbAttribute");
+    });
+
+    it("must not register the breadcrumbs attribute", () => {
+        expect(sut.resources)
+            .not.toContain("./components/breadcrumbs/breadcrumbsAttribute");
     });
 });
 
@@ -252,6 +272,16 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
         expect(sut.resources)
             .toContain("./components/icon/iconElement");
     });
+
+    it("must register the breadcrumb element", () => {
+        expect(sut.resources)
+            .toContain("./components/breadcrumbs/breadcrumbElement");
+    });
+
+    it("must register the breadcrumbs element", () => {
+        expect(sut.resources)
+            .toContain("./components/breadcrumbs/breadcrumbsElement");
+    });
 });
 
 describe("the Aurelia Materialize CSS configuration with the option enableElements false", () => {
@@ -342,5 +372,15 @@ describe("the Aurelia Materialize CSS configuration with the option enableElemen
     it("must not register the icon element", () => {
         expect(sut.resources)
             .not.toContain("./components/icon/iconElement");
+    });
+
+    it("must not register the breadcrumb element", () => {
+        expect(sut.resources)
+            .not.toContain("./components/breadcrumbs/breadcrumbElement");
+    });
+
+    it("must not register the breadcrumbs element", () => {
+        expect(sut.resources)
+            .not.toContain("./components/breadcrumbs/breadcrumbsElement");
     });
 });

@@ -41,6 +41,9 @@ export function configure(config: FrameworkConfiguration, options: MaterializeCs
 
         "./components/badge/badgeAttribute",
         "./components/icon/iconAttribute",
+
+        "./components/breadcrumbs/breadcrumbAttribute",
+        "./components/breadcrumbs/breadcrumbsAttribute",
     ];
 
     let elements = [
@@ -66,6 +69,9 @@ export function configure(config: FrameworkConfiguration, options: MaterializeCs
 
         "./components/badge/badgeElement",
         "./components/icon/iconElement",
+
+        "./components/breadcrumbs/breadcrumbElement",
+        "./components/breadcrumbs/breadcrumbsElement",
     ];
 
     // Filter out attributes and elements

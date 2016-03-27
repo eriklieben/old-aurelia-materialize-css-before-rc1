@@ -28,6 +28,9 @@ export class Configuration {
     public icon = `${this.prefix}icon`.trim();
     public button = `${this.prefix}button`.trim();
 
+    public breadcrumb = `${this.prefix}breadcrumb`.trim();
+    public breadcrumbs = `${this.prefix}breadcrumbs`.trim();
+
     public materialSelect = `${this.prefix}select`.trim();
     public pickadate = `${this.prefix}pickadate`.trim();
 
