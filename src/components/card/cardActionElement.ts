@@ -1,7 +1,7 @@
 import { customElement, containerless, inlineView } from "aurelia-framework";
 import { config } from "./../../config";
 
-@customElement(config.card)
+@customElement(config.cardAction)
 @containerless()
 @inlineView("<template><div ref='element'><content></content></div></template>")
 export class CardActionElement {
