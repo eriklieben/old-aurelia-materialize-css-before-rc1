@@ -13,7 +13,7 @@ System.config({
   },
 
   map: {
-    "@eriklieben/materialize-css": "npm:@eriklieben/materialize-css@0.97.5",
+    "@eriklieben/materialize-css": "npm:@eriklieben/materialize-css@0.97.5-1",
     "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.2.2",
     "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.1.5",
     "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.1.4",
@@ -36,7 +36,7 @@ System.config({
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
     },
-    "npm:@eriklieben/materialize-css@0.97.5": {
+    "npm:@eriklieben/materialize-css@0.97.5-1": {
       "css": "github:systemjs/plugin-css@0.1.20",
       "jquery": "npm:jquery@2.2.2"
     },
