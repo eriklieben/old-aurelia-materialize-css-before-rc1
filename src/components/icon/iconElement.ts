@@ -1,5 +1,4 @@
-import { bindable, bindingMode, containerless, customElement, inlineView } from "aurelia-framework";
-import { inject } from "aurelia-dependency-injection";
+import { bindable, containerless, customElement, inlineView } from "aurelia-framework";
 import { config } from "./../../config";
 
 @customElement(config.icon)

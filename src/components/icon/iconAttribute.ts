@@ -1,4 +1,4 @@
-import { bindable, bindingMode, customAttribute } from "aurelia-framework";
+import { bindable, customAttribute } from "aurelia-framework";
 import { inject } from "aurelia-dependency-injection";
 import { config } from "./../../config";
 
