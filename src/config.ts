@@ -26,9 +26,12 @@ export class Configuration {
 
     public badge = `${this.prefix}badge`.trim();
     public icon = `${this.prefix}icon`.trim();
+    public button = `${this.prefix}button`.trim();
 
     public materialSelect = `${this.prefix}select`.trim();
     public pickadate = `${this.prefix}pickadate`.trim();
+
+    public allowedWaves = ["light", "red", "yellow", "orange", "purple", "green", "teal" ];
 }
 
 export var config = new Configuration();
