@@ -1,4 +1,4 @@
-export class Configuration {
+export class Configuration implements IConfiguration {
 
     public prefix = "m:";
 
@@ -37,5 +37,43 @@ export class Configuration {
     public allowedWaves = ["light", "red", "yellow", "orange", "purple", "green", "teal" ];
 }
 
-export var config = new Configuration();
+export interface IConfiguration {
+    prefix?: string;
+
+    collapsible?: string;
+    collapsibleBody?: string;
+    collapsibleHeader?: string;
+    collapsibleItem?: string;
+
+    dropdown?: string;
+    dropdownDivider?: string;
+    dropdownItem?: string;
+
+    boxed?: string;
+    slide?: string;
+    slider?: string;
+
+    modal?: string;
+    modalTrigger?: string;
+    modalContent?: string;
+    modalFooter?: string;
+
+    pushpin?: string;
+
+    scrollSpy?: string;
+
+    badge?: string;
+    icon?: string;
+    button?: string;
+
+    breadcrumb?: string;
+    breadcrumbs?: string;
+
+    materialSelect?: string;
+    pickadate?: string;
+
+    allowedWaves?: Array<string>;
+}
+
+export var config: IConfiguration = new Configuration();
 export default config;

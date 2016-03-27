@@ -6,7 +6,7 @@ import { DOM } from "aurelia-pal";
 import "@eriklieben/materialize-css";
 
 describe("the Aurelia Materialize CSS BreadcrumbElement", () => {
-    let sut:BreadcrumbElement, templatingEngine, container;
+    let sut: BreadcrumbElement, templatingEngine, container;
 
     beforeEach(() => {
         container = new Container();
