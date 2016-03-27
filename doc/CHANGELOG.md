@@ -1,3 +1,11 @@
+<a name="0.0.11"></a>
+## 0.0.11 (2016-03-27)
+
+* fix(card) card action element registrated as card instead of cardAction ([648de73](https://github.com/eriklieben/aurelia-materialize-css/commit/648de73))
+* release 0.0.10 ([973dba0](https://github.com/eriklieben/aurelia-materialize-css/commit/973dba0))
+
+
+
 <a name="0.0.10"></a>
 ## 0.0.10 (2016-03-27)
 
