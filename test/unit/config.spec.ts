@@ -93,4 +93,28 @@ describe("the Aurelia Materialize CSS config", () => {
     it("must have a property breadcrumbs with the default value 'm:breadcrumbs'", () => {
         expect(config.breadcrumbs).toBe("m:breadcrumbs");
     });
+
+    it("must have a property card with the default value 'm:card'", () => {
+        expect(config.card).toBe("m:card");
+    });
+
+    it("must have a property cardTitle with the default value 'm:card-title'", () => {
+        expect(config.cardTitle).toBe("m:card-title");
+    });
+
+    it("must have a property cardAction with the default value 'm:card-action'", () => {
+        expect(config.cardAction).toBe("m:card-action");
+    });
+
+    it("must have a property cardImage with the default value 'm:card-image'", () => {
+        expect(config.cardImage).toBe("m:card-image");
+    });
+
+    it("must have a property cardReveal with the default value 'm:card-reveal'", () => {
+        expect(config.cardReveal).toBe("m:card-reveal");
+    });
+
+    it("must have a property cardPanel with the default value 'm:card-panel'", () => {
+        expect(config.cardPanel).toBe("m:card-panel");
+    });
 });

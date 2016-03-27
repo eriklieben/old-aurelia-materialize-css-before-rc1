@@ -54,6 +54,13 @@ export function configure(config: FrameworkConfiguration, options?: IMaterialize
 
         "./components/breadcrumbs/breadcrumbAttribute",
         "./components/breadcrumbs/breadcrumbsAttribute",
+
+        "./components/card/cardAttribute",
+        "./components/card/cardTitleAttribute",
+        "./components/card/cardActionAttribute",
+        "./components/card/cardImageAttribute",
+        "./components/card/cardRevealAttribute",
+        "./components/card/cardPanelAttribute",
     ];
 
     let elements = [
@@ -82,6 +89,13 @@ export function configure(config: FrameworkConfiguration, options?: IMaterialize
 
         "./components/breadcrumbs/breadcrumbElement",
         "./components/breadcrumbs/breadcrumbsElement",
+
+        "./components/card/cardElement",
+        "./components/card/cardTitleElement",
+        "./components/card/cardActionElement",
+        "./components/card/cardImageElement",
+        "./components/card/cardRevealElement",
+        "./components/card/cardPanelElement",
     ];
 
     // Filter out attributes and elements

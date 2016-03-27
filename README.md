@@ -86,5 +86,11 @@ Allows you to supply ```MaterializeCssOptions``` options.
 | breadcrumbs       | m:breadcrumbs                                   | Name of the breadcrumbs element or attribute        |
 | materialSelect    | m:select                                        | Name of the material select element or attribute    |
 | pickadate         | m:pickadate                                     | Name of the pick a date element or attribute        |
+| card              | m:card                                          | Name of the card element or attribute               |
+| cardTitle         | m:card-title                                    | Name of the card title element or attribute         |
+| cardAction        | m:card-action                                   | Name of the card action element or attribute        |
+| cardImage         | m:card-image                                    | Name of the card image element or attribute         |
+| cardReveal        | m:card-reveal                                   | Name of the card reveal element or attribute        |
+| cardPanel         | m:card-panel                                    | Name of the card panel element or attribute         |
 | allowedWaves      | light, red, yellow, orange, purple, green, teal | List of allowed waves classes                       |
 

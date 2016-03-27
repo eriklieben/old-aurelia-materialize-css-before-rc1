@@ -34,6 +34,13 @@ export class Configuration implements IConfiguration {
     public materialSelect = `${this.prefix}select`.trim();
     public pickadate = `${this.prefix}pickadate`.trim();
 
+    public card = `${this.prefix}card`.trim();
+    public cardTitle = `${this.prefix}card-title`.trim();
+    public cardAction = `${this.prefix}card-action`.trim();
+    public cardImage = `${this.prefix}card-image`.trim();
+    public cardReveal = `${this.prefix}card-reveal`.trim();
+    public cardPanel = `${this.prefix}card-panel`.trim();
+
     public allowedWaves = ["light", "red", "yellow", "orange", "purple", "green", "teal" ];
 }
 
@@ -71,6 +78,13 @@ export interface IConfiguration {
 
     materialSelect?: string;
     pickadate?: string;
+
+    card?: string;
+    cardTitle?: string;
+    cardAction?: string;
+    cardImage?: string;
+    cardReveal?: string;
+    cardPanel?: string;
 
     allowedWaves?: Array<string>;
 }
