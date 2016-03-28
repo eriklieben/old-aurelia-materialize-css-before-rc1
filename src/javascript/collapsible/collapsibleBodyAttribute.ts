@@ -16,5 +16,4 @@ export class CollapsibleBodyAttribute {
     public detached() {
         this.element.classList.remove("collapsible-body");
     }
-
 }
