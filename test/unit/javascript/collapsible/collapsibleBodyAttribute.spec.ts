@@ -36,5 +36,4 @@ describe("the Aurelia Materialize CSS CollapsibleBodyAttribute", () => {
         // assert
         expect(sut.element.classList).not.toContain("collapsible-body");
     });
-
 });
