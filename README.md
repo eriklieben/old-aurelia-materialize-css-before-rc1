@@ -16,7 +16,7 @@ Examples and how to use can be found at the [demo site](http://aurelia-materiali
 
 #Installation
 ```
-jspm i npm:aurelia-materialize-css
+jspm i aurelia-materialize-css
 ```
 main.ts (typescript)
 ```typescript
