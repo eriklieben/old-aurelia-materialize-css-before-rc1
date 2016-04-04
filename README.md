@@ -1,6 +1,6 @@
 # aurelia-materialize-css plugin
 
-[![Build Status](https://travis-ci.org/eriklieben/aurelia-materialize-css.svg?branch=master)](https://travis-ci.org/eriklieben/aurelia-materialize-css)
+[![Join the chat at https://gitter.im/eriklieben/aurelia-materialize-css](https://badges.gitter.im/eriklieben/aurelia-materialize-css.svg)](https://gitter.im/eriklieben/aurelia-materialize-css?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://travis-ci.org/eriklieben/aurelia-materialize-css.svg?branch=master)](https://travis-ci.org/eriklieben/aurelia-materialize-css)
 [![GitHub version](https://img.shields.io/github/release/eriklieben/aurelia-materialize-css.svg)](https://img.shields.io/github/release/eriklieben/aurelia-materialize-css.svg)
 [![npm version](https://img.shields.io/npm/v/aurelia-materialize-css.svg)](https://img.shields.io/npm/v/aurelia-materialize-css.svg)
 
@@ -16,7 +16,7 @@ Examples and how to use can be found at the [demo site](http://aurelia-materiali
 
 #Installation
 ```
-jspm i npm:aurelia-materialize-css
+jspm i aurelia-materialize-css
 ```
 main.ts (typescript)
 ```typescript
