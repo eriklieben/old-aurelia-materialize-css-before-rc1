@@ -1,3 +1,15 @@
+<a name="0.0.13"></a>
+## 0.0.13 (2016-04-04)
+
+* Add Gitter badge ([bf8503b](https://github.com/eriklieben/aurelia-materialize-css/commit/bf8503b))
+* chore(dep) update jspm packages ([1af01df](https://github.com/eriklieben/aurelia-materialize-css/commit/1af01df))
+* chore(readme) put badge on 1 line ([f0beeec](https://github.com/eriklieben/aurelia-materialize-css/commit/f0beeec))
+* chore(readme) update install instructions to use registry.json ([bf6af28](https://github.com/eriklieben/aurelia-materialize-css/commit/bf6af28))
+* refactor(collapsible) make attribute and element work the same ([6121641](https://github.com/eriklieben/aurelia-materialize-css/commit/6121641))
+* test(collapsible) extend tests to be in line with latest changes ([cf98bc1](https://github.com/eriklieben/aurelia-materialize-css/commit/cf98bc1))
+
+
+
 <a name="0.0.12"></a>
 ## 0.0.12 (2016-03-27)
 

@@ -24,7 +24,7 @@ export class CollapsibleElement {
 
         if (this.class !== undefined && this.class !== null) {
             this.class.split(" ").forEach(element => {
-                if (element !== '') {
+                if (element !== "") {
                     this.element.classList.add(element);
                 }
             });
@@ -37,8 +37,8 @@ export class CollapsibleElement {
         this.element.removeAttribute("data-collapsible");
 
         // There should not be any css class on the ul.
-        for(let item of this.element.classList) {
-            this.element.classList.remove(item);
+        for (let i = 0; i < this.element.classList.length; i++) {
+            this.element.classList.remove(this.element.classList[i]);
         }
     }
 }
