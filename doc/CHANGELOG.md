@@ -1,3 +1,10 @@
+<a name="0.0.14"></a>
+## 0.0.14 (2016-05-15)
+
+* chore(dep) update jspm packages ([1d9d496](https://github.com/eriklieben/aurelia-materialize-css/commit/1d9d496))
+
+
+
 <a name="0.0.13"></a>
 ## 0.0.13 (2016-04-04)
 
